@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Electrical meter</string>
+    <string name="powerbtn">По известной мощности</string>
+    <string name="voltamper">По току и напряжению</string>
+    <string name="info">для розеток рекомендуется ставить медный провод сечением не менее 2,5 мм2,
+                        не зависимо от предпологаемой меньшей нагрузки</string>
+    <string name="timer_00">00:00</string>
+    <string name="indicator_false">...</string>
+    <string name="indicator_true">импульс</string>
+    <string name="power_input_hint">мощность(кВт)</string>
+    <string name="pulsesinhour_input_hint">имп(оборот) в час</string>
+    <string name="pulses_input_hint">кол-во импульсов</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bluelightbg"
+    tools:context=".InfoScreen">
+
+    <TextView
+        android:id="@+id/voltage_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:text="Напряжение(В)"
+        android:textColor="#42F423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/voltage_value"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="16dp"
+        android:text="220"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amper_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Сила тока"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltage_label" />
+
+    <TextView
+        android:id="@+id/amper_value"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltage_value" />
+
+    <TextView
+        android:id="@+id/power_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Мощность(кВт)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amper_label" />
+
+    <TextView
+        android:id="@+id/power_value"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amper_value" />
+
+    <TextView
+        android:id="@+id/impkwh_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Имп(об)/кВт*ч"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power_label" />
+
+    <TextView
+        android:id="@+id/impkwh_value"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power_value" />
+
+    <TextView
+        android:id="@+id/impcount_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Кол-во импульсов"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/impkwh_label" />
+
+    <TextView
+        android:id="@+id/interval_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Интервал между имп"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/impcount_label" />
+
+    <TextView
+        android:id="@+id/time_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Искомое время"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_label" />
+
+    <TextView
+        android:id="@+id/impcount_value"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/impkwh_value" />
+
+    <TextView
+        android:id="@+id/interval_value"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/impcount_value" />
+
+    <TextView
+        android:id="@+id/time_value"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0 мин 0 сек"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_value" />
+
+    <Button
+        android:id="@+id/button_home_is"
+        style="@style/button_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_is"
+        style="@style/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="44dp"
+        android:background="@mipmap/button_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bluelightbg"
+    tools:context=".WiringInfo">
+
+    <TextView
+        android:id="@+id/powerinfo"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:text="мощность(Вт)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/power_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lenght_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="длина провода(м)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerinfo" />
+
+    <TextView
+        android:id="@+id/lenght_val"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power_val" />
+
+    <TextView
+        android:id="@+id/amper_info"
+        style="@style/info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="сила тока(А)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lenght_info" />
+
+    <TextView
+        android:id="@+id/amper_val"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lenght_val" />
+
+    <TextView
+        android:id="@+id/cop_res_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="сопротивление(Ом)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copper" />
+
+    <TextView
+        android:id="@+id/cop_res_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copper" />
+
+    <TextView
+        android:id="@+id/copper"
+        style="@style/additional_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="для медной проводки"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amper_info" />
+
+    <TextView
+        android:id="@+id/cop_cross_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="сечение(мм2)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_res_info" />
+
+    <TextView
+        android:id="@+id/cop_cross_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_res_val" />
+
+    <TextView
+        android:id="@+id/max_amp_cop_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="макс. длительный ток(А)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_cross_info" />
+
+    <TextView
+        android:id="@+id/max_amp_cop_val"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_cross_val" />
+
+    <TextView
+        android:id="@+id/delta_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="потеря(В)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_amp_cop_info" />
+
+    <TextView
+        android:id="@+id/cop_delta_val"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_amp_cop_val" />
+
+    <TextView
+        android:id="@+id/cop_percent_info"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="потеря(%)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delta_info" />
+
+    <TextView
+        android:id="@+id/cop_percent_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_delta_val" />
+
+    <TextView
+        android:id="@+id/alum_label"
+        style="@style/additional_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="для алюминиевой проводки"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cop_percent_info" />
+
+    <TextView
+        android:id="@+id/al_resist_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="сопротивление(Ом)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alum_label" />
+
+    <TextView
+        android:id="@+id/al_resist_val"
+        style="@style/info_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alum_label" />
+
+    <TextView
+        android:id="@+id/al_cross_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="сечение(мм2)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_resist_label" />
+
+    <TextView
+        android:id="@+id/al_cross_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_resist_val" />
+
+    <TextView
+        android:id="@+id/al_max_amp_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="макс.длительный ток"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_cross_label" />
+
+    <TextView
+        android:id="@+id/al_max_amp_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_cross_val" />
+
+    <TextView
+        android:id="@+id/al_delta_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="потеря(В)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_max_amp_label" />
+
+    <TextView
+        android:id="@+id/al_delta_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_max_amp_val" />
+
+    <TextView
+        android:id="@+id/al_percent_label"
+        style="@style/info_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="потеря(%)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_delta_label" />
+
+    <TextView
+        android:id="@+id/al_percent_val"
+        style="@style/info_values"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_delta_val" />
+
+    <Button
+        android:id="@+id/button_home_wi"
+        style="@style/button_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_wi"
+        style="@style/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:padding="6dp"
+        android:text="@string/info"
+        android:textColor="#3FD1A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_percent_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

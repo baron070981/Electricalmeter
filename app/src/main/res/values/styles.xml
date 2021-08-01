@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="info_label">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_label</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+    <style name="info_values">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_value</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    <style name="input">
+        <item name="android:textColorHint">#BC22CA81</item>
+    </style>
+    <style name="additional_text">
+        <item name="android:textColor">#FF0FE1F4</item>
+    </style>
+    <style name="button_home">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@mipmap/button_home</item>
+    </style>
+    <style name="button_back">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@mipmap/button_back</item>
+    </style>
+</resources>
